@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaN Not a Nmber</title>
+</head>
+<body>
+    <script>
+        // NaN
+        document.writeln(`<p>${parseInt("salah")}</p>`)
+        document.writeln(`<p>${parseFloat("1.1text")}</p>`)
+        document.writeln(`<p>${Number("1.1cups")}</p>`)
+        document.writeln(`<p>${Number("1x")}</p>`)
+        document.writeln(`<p>${Number("bukan")}</p>`)
+
+        document.writeln("ini pembatas")
+
+        const value1 = Number("salah")
+        const hasil = value1 + 100
+        document.writeln(`<p>${hasil}</p>`)
+
+        document.writeln(`<p>${isNaN(value1)}</p>`)
+        document.writeln(`<p>${isNaN(100)}</p>`)
+    </script>
+</body>
+</html>
