@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika di Non Boolean</title>
+</head>
+<body>
+    <script>
+        // mengambil nilai truthy pertama
+        console.info("hello" || "")
+        console.info("" || [])
+        console.info("0" || "nol")
+        console.info(0 || "nol")
+        console.info(null || "null")
+        console.info(undefined || "undefined")
+        console.info(0 || false)
+
+        const person = {
+            firstName: "Ravi",
+            lastName: "Fahrezi"
+        }
+        const name = person.firstName || person.lastName
+        console.info(name)
+
+        // mengambil nilai falsy pertama
+        console.info("hello" && "")
+        console.info("" && [])
+        console.info("0" && "nol")
+        console.info(0 && "nol")
+        console.info(null && "null")
+        console.info(undefined && "undefined")
+        console.info(0 && false)
+    </script>
+</body>
+</html>

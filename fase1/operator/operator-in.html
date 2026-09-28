@@ -12,7 +12,26 @@
             lastName: "Fahrezi"
         }
 
-        const hasil = "firstName" in orang
+        if ("firstName" in orang) {
+            alert(`Halo Bg ${orang.firstName}`)
+        } else {
+            alert("Hello")
+        }
+
+        const student = {
+            firstName: "Ravi",
+            middleName: undefined,
+            lastName: "Fahrezi"
+        }
+
+        if ("middleName" in student) {
+            alert(`Hello ${student.middleName}`)
+        } else {
+            alert("halo bg")
+        }
+
+        const names = [null, "Ravi", null]
+        const hasil = 0 in names
         document.writeln(`<p>${hasil}</p>`)
     </script>
 </body>
