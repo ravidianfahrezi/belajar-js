@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Generator</title>
+</head>
+<body>
+    <script>
+        function* createNames () {
+            yield "Ravi"
+            yield "Dian"
+            yield "Fahrezi"
+        }
+
+        const names = createNames()
+        for (const name of names) {
+            console.log(name)
+        }
+
+        function* bilanganGanjil (value) {
+            for (let i = 1; i <= value; i++) {
+                if (i % 2 === 1) {
+                    yield i
+                }
+            }
+        }
+
+        const angkaganjil = bilanganGanjil(100)
+        // for (const angka of angkaganjil) {
+        //     console.log(angka)
+        // }
+
+        console.info(angkaganjil.next().value)
+        console.info(angkaganjil.next().value)
+        console.info(angkaganjil.next().value)
+    </script>
+</body>
+</html>
